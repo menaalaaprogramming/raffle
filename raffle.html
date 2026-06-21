@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wheel of Fortune</title>
+  <link rel="stylesheet" href="raffle.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🎡 عجلة الحظ - السحب</h1>
+
+    <div class="input-box">
+      <input type="text" id="nameInput" placeholder="اكتب اسم المشترك">
+      <button onclick="addName()">إضافة</button>
+    </div>
+
+    <div class="list">
+      <ul id="namesList"></ul>
+    </div>
+
+    <div class="wheel-container">
+      <canvas id="wheelCanvas" width="400" height="400"></canvas>
+      <div class="pointer">▼</div>
+    </div>
+
+    <button class="spin-btn" onclick="spinWheel()">ابدأ السحب</button>
+
+    <h2 id="result"></h2>
+
+  </div>
+
+  <script src="raffle.js"></script>
+</body>
+</html>
